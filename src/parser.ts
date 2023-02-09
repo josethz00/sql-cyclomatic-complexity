@@ -69,5 +69,8 @@ async function parse() {
   }
 }
 
-parse().then((response) => console.log(response
+parse().then((response) => console.log(
+  `The cyclomatic complexity for your database schema is: M = ${
+    response.totalRelationsCount - response.totalTablesCount + 2 * response.singleRelationTablesCount
+  }`
 ));
