@@ -56,7 +56,7 @@ async function parse() {
 
   let singleRelationTablesCount = 0;
 
-  for (const [key, value] of Object.entries(occurrences)) {
+  for (const [, value] of Object.entries(occurrences)) {
     if (value === 1) {
       singleRelationTablesCount++
     }
