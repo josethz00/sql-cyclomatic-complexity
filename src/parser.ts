@@ -12,7 +12,7 @@ async function parse() {
   const foreignKeyTables: {originTable: string; referencedTable: string;}[] = [];
 
   const sqlString = await fs.readFile(
-    path.join(__dirname, 'script.sql'),
+    path.join(__dirname, 'schema.sql'),
     'utf-8'
   );
 
